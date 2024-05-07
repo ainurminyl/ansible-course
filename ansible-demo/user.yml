@@ -9,6 +9,4 @@
         name: "{{ user }}"
         state: present
       become: true  
-      register: out
-    - debug:
-        var: out
+      debugger: always
